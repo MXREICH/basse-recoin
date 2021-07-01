@@ -1,0 +1,46 @@
+body {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+body h1 {
+	font-style: bold;
+	font-family: Georgia;
+	/*2em*/
+}
+
+nav {
+	width: 200px;
+
+}
+
+
+h1:hover {
+	text-decoration-line: underline;
+
+}
+
+#div1 {
+	transition: 0.1s;
+	box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+#div2 {
+	transition: 0.1s;
+	box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+#div0:hover #div1,
+#div0:hover #div2 {
+	filter: blur(3px);
+	opacity: .5;
+	box-shadow: none;
+	transition: 1s all;
+}
+
+#div0 #div1:hover,
+#div0 #div2:hover {
+	filter: blur(0px);
+	opacity: 1;
+	transform: scale(1.02);
+	box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+}
